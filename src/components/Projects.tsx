@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
 import { FaLink, FaSearch, FaStar, FaCodeBranch, FaExclamationCircle } from 'react-icons/fa';
 import { HiUsers } from 'react-icons/hi';
