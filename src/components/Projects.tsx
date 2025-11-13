@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState, useEffect } from 'react';
-import { FaGithub, FaLink, FaSearch, FaStar, FaCodeBranch, FaExclamationCircle } from 'react-icons/fa';
+import { FaLink, FaSearch, FaStar, FaCodeBranch, FaExclamationCircle } from 'react-icons/fa';
 import { HiUsers } from 'react-icons/hi';
 
 interface GitHubRepo {
@@ -11,6 +11,7 @@ interface GitHubRepo {
   language: string;
   stargazers_count: number;
   forks_count: number;
+  fork: boolean;
   open_issues_count: number;
   html_url: string;
   homepage: string | null;
@@ -21,7 +22,7 @@ interface GitHubRepo {
 
 const Projects = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  // const isInView = useInView(ref, { once: true, amount: 0.2 });
   const [filter, setFilter] = useState('All');
   const [hoveredProject, setHoveredProject] = useState<string | null>(null);
   const [repos, setRepos] = useState<GitHubRepo[]>([]);
