@@ -249,7 +249,7 @@ const Skills = () => {
           className="mt-16 text-center"
         >
           <h3 className="text-2xl font-bold text-dark/80 mb-8">
-            And many more... 🎯
+            And many more... 
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[

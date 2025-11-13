@@ -136,7 +136,7 @@ const Hero = () => {
           >
             Passionate about building <span className="text-primary font-semibold">scalable distributed systems</span> and solving complex problems.
             <br />
-            🏆 3⭐ on CodeChef | 🎖️ Knight on LeetCode | 🎓 Final Year BTech Student
+            {/* 🏆 3⭐ on CodeChef | 🎖️ Knight on LeetCode | 🎓 Final Year BTech Student */}
           </motion.p>
 
           {/* CTA Buttons with Animations */}
